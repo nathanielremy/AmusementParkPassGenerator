@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD23EB851E965CEA005949F7 /* Entrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD23EB841E965CEA005949F7 /* Entrant.swift */; };
 		ADA1C1A01E954E100089235D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA1C19F1E954E100089235D /* AppDelegate.swift */; };
 		ADA1C1A21E954E100089235D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA1C1A11E954E100089235D /* ViewController.swift */; };
 		ADA1C1A51E954E100089235D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA1C1A31E954E100089235D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD23EB831E965AB6005949F7 /* AssumptionTests.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = AssumptionTests.playground; path = AmusementParkPassGenerator/AssumptionTests.playground; sourceTree = "<group>"; };
+		AD23EB841E965CEA005949F7 /* Entrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entrant.swift; sourceTree = "<group>"; };
 		ADA1C19C1E954E100089235D /* AmusementParkPassGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmusementParkPassGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA1C19F1E954E100089235D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA1C1A11E954E100089235D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 			children = (
 				ADA1C19E1E954E100089235D /* AmusementParkPassGenerator */,
 				ADA1C19D1E954E100089235D /* Products */,
+				AD23EB831E965AB6005949F7 /* AssumptionTests.playground */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +60,7 @@
 			children = (
 				ADA1C19F1E954E100089235D /* AppDelegate.swift */,
 				ADA1C1A11E954E100089235D /* ViewController.swift */,
+				AD23EB841E965CEA005949F7 /* Entrant.swift */,
 				ADA1C1A31E954E100089235D /* Main.storyboard */,
 				ADA1C1A61E954E100089235D /* Assets.xcassets */,
 				ADA1C1A81E954E100089235D /* LaunchScreen.storyboard */,
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD23EB851E965CEA005949F7 /* Entrant.swift in Sources */,
 				ADA1C1A21E954E100089235D /* ViewController.swift in Sources */,
 				ADA1C1A01E954E100089235D /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +308,7 @@
 				ADA1C1B01E954E100089235D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
