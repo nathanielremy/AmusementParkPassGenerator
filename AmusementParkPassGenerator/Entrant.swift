@@ -10,6 +10,8 @@
 
 import Foundation
 
+
+// Entrant identity
 enum Entrant {
     case classicGuest
     case VIPGuest
@@ -21,6 +23,13 @@ enum Entrant {
     
 }
 
+
+
+
+
+
+
+// Entrant functionality for swipe methods
 extension Entrant {
     
     var canAccessAmusementArea: Bool {
@@ -73,6 +82,13 @@ extension Entrant {
         case .VIPGuest: return "20% off all merchandise"
         case .hourlyFoodServiceEmployee, .hourlyMaintenanceEmployee, .hourlyRideServiceEmployee, .manager: return "25% off all merchandise"
         default: return "Access to merchandise discount denied"
+        }
+    }
+    
+    var canAccessOffice: Bool {
+        switch self {
+        case .manager: return true
+        default: return false
         }
     }
     

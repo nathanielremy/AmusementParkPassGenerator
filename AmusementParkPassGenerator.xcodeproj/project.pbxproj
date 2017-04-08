@@ -18,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD23EB831E965AB6005949F7 /* AssumptionTests.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = AssumptionTests.playground; path = AmusementParkPassGenerator/AssumptionTests.playground; sourceTree = "<group>"; };
 		AD23EB841E965CEA005949F7 /* Entrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entrant.swift; sourceTree = "<group>"; };
 		AD57170B1E96800A00FB3EBE /* AmusementPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmusementPark.swift; sourceTree = "<group>"; };
 		ADA1C19C1E954E100089235D /* AmusementParkPassGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmusementParkPassGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +46,6 @@
 			children = (
 				ADA1C19E1E954E100089235D /* AmusementParkPassGenerator */,
 				ADA1C19D1E954E100089235D /* Products */,
-				AD23EB831E965AB6005949F7 /* AssumptionTests.playground */,
 			);
 			sourceTree = "<group>";
 		};

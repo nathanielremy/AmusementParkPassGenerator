@@ -9,9 +9,14 @@
 import Foundation
 
 
+// Error types
+
 enum PassCreationError: Error {
     case wrongEntrantType
     case missingRequiredInfo
+    case invalidAge
+    case noAgeInput
+    case invalidBirthday
 }
 
 
