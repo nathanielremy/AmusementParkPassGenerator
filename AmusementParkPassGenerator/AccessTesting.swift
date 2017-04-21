@@ -228,24 +228,7 @@ class AccessTesting: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     func passDesignSetUp() {
         

@@ -20,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		AD23EB841E965CEA005949F7 /* Entrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entrant.swift; sourceTree = "<group>"; };
-		AD2EF00A1EA623D00064A5A1 /* EntrantTests.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EntrantTests.playground; sourceTree = "<group>"; };
 		AD57170B1E96800A00FB3EBE /* AmusementPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmusementPark.swift; sourceTree = "<group>"; };
 		ADA1C19C1E954E100089235D /* AmusementParkPassGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmusementParkPassGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA1C19F1E954E100089235D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +72,6 @@
 				ADA1C1A61E954E100089235D /* Assets.xcassets */,
 				ADA1C1A81E954E100089235D /* LaunchScreen.storyboard */,
 				ADA1C1AB1E954E100089235D /* Info.plist */,
-				AD2EF00A1EA623D00064A5A1 /* EntrantTests.playground */,
 			);
 			path = AmusementParkPassGenerator;
 			sourceTree = "<group>";

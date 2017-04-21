@@ -303,6 +303,7 @@ import UIKit
     }
     
     
+    // Show user the correct text fields to fill out
     func displayFormInput(_ sender: UIButton) {
         
         disableAllForms()
@@ -624,6 +625,77 @@ import UIKit
         }
         }
     }
+    
+    
+    // Populate Data
+    @IBAction func populateData() {
+        
+        if let entree = entree {
+            
+            if entree == .classicGuest || entree == .VIPGuest {
+                alertViews(title: "No info needed", message: "Classic and VIP guests require no personal information")
+
+            } else {
+                
+                if firstNameTextField.isEnabled {
+                    firstNameTextField.text = "Jon"
+                }
+                
+                if lastNameTextField.isEnabled {
+                    lastNameTextField.text = "Doe"
+                }
+                
+                if dateOfBirthTextField.isEnabled {
+                    if entree == .freeChildGuest {
+                        dateOfBirthTextField.text = "06/02/2016"
+                    } else {
+                        dateOfBirthTextField.text = "06/02/1944"
+                    }
+                }
+                
+                if projectNumberTextField.isEnabled {
+                    projectNumberTextField.text = "2001"
+                }
+                
+                if companyTextField.isEnabled {
+                    companyTextField.text = "Acme"
+                }
+                
+                if streetAddressTextField.isEnabled {
+                    streetAddressTextField.text = "1234 Random Street"
+                }
+                
+                if cityTextField.isEnabled {
+                    cityTextField.text = "Los Angeles"
+                }
+                
+                if stateTextField.isEnabled {
+                    stateTextField.text = "California"
+                }
+                
+                if zipCodeTextField.isEnabled {
+                    zipCodeTextField.text = "J7T 9Q3"
+                }
+                
+                
+            }
+            
+            
+        } else {
+            
+            alertViews(title: "No Entrant Type Selected", message: "Select an entrant type to find out required data")
+            
+        }
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
     
     
     
