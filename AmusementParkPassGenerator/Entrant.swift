@@ -20,7 +20,10 @@ enum Entrant {
     case hourlyRideServiceEmployee
     case hourlyMaintenanceEmployee
     case manager
-    
+    case seasonPassGuest
+    case seniorGuest
+    case contractor
+    case vendor
 }
 
 
@@ -32,12 +35,20 @@ enum Entrant {
 // Entrant functionality for swipe methods
 extension Entrant {
     
+    
     var canAccessAmusementArea: Bool {
-        return true
+        
+        switch self {
+        case .vendor, .contractor: fatalError()
+        default: return true
+        }
+        
+        
     }
     
     var canAccessKitchenArea: Bool {
         switch self {
+        case .vendor, .contractor: fatalError()
         case .hourlyFoodServiceEmployee, .hourlyMaintenanceEmployee, .manager: return true
         default: return false
         }
@@ -45,6 +56,7 @@ extension Entrant {
     
     var canAccessRideControlArea: Bool {
         switch self {
+        case .vendor, .contractor: fatalError()
         case .hourlyRideServiceEmployee, .hourlyMaintenanceEmployee, .manager: return true
         default: return false
         }
@@ -52,25 +64,29 @@ extension Entrant {
     
     var canAccessMaintenanceArea: Bool {
         switch self {
+        case .vendor, .contractor: fatalError()
         case .hourlyMaintenanceEmployee, .manager: return true
         default: return false
         }
     }
     
     var canAccessAllRides: Bool {
-        return true
+        switch self {
+        case .contractor, .vendor: return false
+        default: return true
+        }
     }
     
     var canSkipLines: Bool {
         switch self {
-        case .VIPGuest: return true
+        case .VIPGuest, .seasonPassGuest, .seniorGuest: return true
         default: return false
         }
     }
     
     var discountOnFood: String {
         switch self {
-        case .VIPGuest: return "10% off all foods"
+        case .VIPGuest, .seasonPassGuest, .seniorGuest: return "10% off all foods"
         case .hourlyRideServiceEmployee, .hourlyMaintenanceEmployee, .hourlyFoodServiceEmployee: return "15% off all foods"
         case .manager: return "25% off all foods"
         default: return "Access to food discount denied"
@@ -79,7 +95,8 @@ extension Entrant {
     
     var discountOnMerchandise: String {
         switch self {
-        case .VIPGuest: return "20% off all merchandise"
+        case .seniorGuest: return "10% off all merchandise"
+        case .VIPGuest, .seasonPassGuest: return "20% off all merchandise"
         case .hourlyFoodServiceEmployee, .hourlyMaintenanceEmployee, .hourlyRideServiceEmployee, .manager: return "25% off all merchandise"
         default: return "Access to merchandise discount denied"
         }
@@ -87,6 +104,7 @@ extension Entrant {
     
     var canAccessOffice: Bool {
         switch self {
+        case .vendor, .contractor: fatalError()
         case .manager: return true
         default: return false
         }

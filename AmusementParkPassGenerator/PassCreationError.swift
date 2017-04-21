@@ -12,11 +12,13 @@ import Foundation
 // Error types
 
 enum PassCreationError: Error {
-    case wrongEntrantType
+    case noEntrantType
     case missingRequiredInfo
     case invalidAge
-    case noAgeInput
     case invalidBirthday
+    case invaliDateFormat
+    case invalidProjectNumber
+    case invalidCompany
 }
 
 
